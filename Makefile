@@ -3,7 +3,7 @@
 
 DOCKER_TAG := latest
 build: ## build docker image to deploy
-	docker build -t JunNishimura/gotodo:${DOCKER_TAG} \
+	docker build -t junnishimura/gotodo:${DOCKER_TAG} \
 			--target deploy ./
 build-local: ## build docker image to local development
 	docker compose build --no-cache
