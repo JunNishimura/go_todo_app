@@ -40,7 +40,7 @@ func TestServer_Run(t *testing.T) {
 	}
 
 	// HTTPサーバーの戻り値を検証
-	want := fmt.Sprintf("Hello, %s", in)
+	want := fmt.Sprintf("Hello, %s!", in)
 	if string(got) != want {
 		t.Errorf("want %q, but got %q", want, got)
 	}
