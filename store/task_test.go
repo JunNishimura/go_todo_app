@@ -11,6 +11,7 @@ import (
 )
 
 func TestRepository_ListTasks(t *testing.T) {
+	t.Parallel()
 	ctx := context.Background()
 	tx, err := testutil.OpenDBForTest(t).BeginTxx(ctx, nil)
 	t.Cleanup(func() { _ = tx.Rollback() })
