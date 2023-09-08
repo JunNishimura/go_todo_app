@@ -1,4 +1,4 @@
-.PHONY help build build-local up down logs ps test
+.PHONY: help build build-local up down logs ps test
 .DEFAULT_GOAL := help
 
 DOCKER_TAG := latest
