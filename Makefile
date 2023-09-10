@@ -3,7 +3,7 @@
 
 DOCKER_TAG := latest
 build: 
-	docker build -t JunNishimura/gotodo:${DOCKER_TAG} \
+	docker build -t junnishimura/gotodo:${DOCKER_TAG} \
 		--target deploy ./
 
 build-local:
